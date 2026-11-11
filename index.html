@@ -3,61 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#071d49">
-  <meta name="description" content="James T. Gabas — Electrical Engineering personal contact card.">
+  <meta name="theme-color" content="#101827">
   <title>James T. Gabas | Digital Business Card</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;padding:32px 16px;font-family:Arial,Helvetica,sans-serif;
+      color:#f7f9fc;background:linear-gradient(145deg,#101827,#172c48 55%,#243b63);
+      display:flex;justify-content:center;align-items:center}
+    .card{width:100%;max-width:440px;padding:30px 24px;border:1px solid #ffffff24;border-radius:26px;
+      background:#ffffff12;box-shadow:0 18px 55px #0005;text-align:center;backdrop-filter:blur(12px)}
+    .avatar{width:112px;height:112px;border-radius:50%;object-fit:cover;border:3px solid #ffffffb0;
+      background:#dbeafe;margin:0 auto 16px;display:block}
+    .initials{display:none;width:112px;height:112px;border-radius:50%;margin:0 auto 16px;
+      background:#dbeafe;color:#183153;font-size:34px;font-weight:700;align-items:center;justify-content:center}
+    h1{font-size:27px;margin:8px 0 6px}
+    .subtitle{color:#d4e2f5;margin:0 0 22px;font-size:14px;line-height:1.5}
+    .links{display:grid;gap:11px}
+    .btn{display:block;padding:14px 16px;border-radius:13px;text-decoration:none;color:#142238;
+      background:#f7fbff;font-weight:700;transition:transform .15s,background .15s}
+    .btn:hover{transform:translateY(-2px);background:#dcecff}
+    .btn.primary{background:#8bd3ff}
+    .section{margin-top:24px;padding-top:20px;border-top:1px solid #ffffff2b}
+    .section h2{font-size:16px;margin:0 0 13px}
+    .qr{width:164px;height:164px;padding:8px;background:#fff;border-radius:12px}
+    .small{font-size:12px;color:#d4e2f5;line-height:1.5;margin:10px 0 0}
+    footer{font-size:11px;color:#c0cee0;margin-top:20px}
+  </style>
 </head>
 <body>
-  <main class="page">
-    <section class="card" aria-label="Personal digital business card">
-      <div class="top-accent"></div>
-      <header class="profile">
-        <div class="photo-wrap">
-          <img class="profile-photo" src="profile.jpg" alt="Profile photo of James T. Gabas">
-        </div>
-        <p class="eyebrow">PERSONAL DIGITAL CARD</p>
-        <h1>James T. Gabas</h1>
-        <p class="course">Bachelor of Science in Electrical Engineering</p>
-        <p class="school">University of Cebu – Lapu-Lapu and Mandaue</p>
-      </header>
+  <main class="card">
+    <img class="avatar" src="profile.jpg" alt="James T. Gabas"
+         onerror="this.style.display='none';document.getElementById('initials').style.display='flex'">
+    <div class="initials" id="initials">JG</div>
+    <h1>James T. Gabas</h1>
+    <p class="subtitle">Electrical Engineering Student<br>Digital Business Card</p>
 
-      <section class="contact-section">
-        <div class="section-heading"><span></span><h2>CONTACT DETAILS</h2><span></span></div>
-        <nav class="contact-list" aria-label="Contact links">
-          <a class="contact-item" href="tel:+639207724994">
-            <span class="icon phone" aria-hidden="true">☎</span>
-            <span class="details"><strong>Mobile Number</strong><small>0920 772 4994</small></span>
-            <span class="chevron" aria-hidden="true">›</span>
-          </a>
-          <a class="contact-item" href="mailto:jamesgabas85@gmail.com">
-            <span class="icon mail" aria-hidden="true">✉</span>
-            <span class="details"><strong>Email Address</strong><small>jamesgabas85@gmail.com</small></span>
-            <span class="chevron" aria-hidden="true">›</span>
-          </a>
-          <a class="contact-item" href="https://www.facebook.com/share/1MJzKPGMtL/" target="_blank" rel="noopener noreferrer">
-            <span class="icon facebook" aria-hidden="true">f</span>
-            <span class="details"><strong>Facebook</strong><small>View Facebook profile</small></span>
-            <span class="chevron" aria-hidden="true">›</span>
-          </a>
-          <a class="contact-item" href="https://www.instagram.com/javex_08?obrf=Zm5xOXE4dzhrMDA0" target="_blank" rel="noopener noreferrer">
-            <span class="icon instagram" aria-hidden="true">◎</span>
-            <span class="details"><strong>Instagram</strong><small>@javex_08</small></span>
-            <span class="chevron" aria-hidden="true">›</span>
-          </a>
-        </nav>
-      </section>
+    <div class="links">
+      <a class="btn primary" href="james-gabas.vcf" download>Save Contact</a>
+      <a class="btn" href="tel:+639207724994">📞 Phone</a>
+      <a class="btn" href="mailto:jamesgabas85@gmail.com">✉️ Email</a>
+      <a class="btn" href="https://www.facebook.com/share/1MJzKPGMtL/" target="_blank" rel="noopener">Facebook</a>
+      <a class="btn" href="https://www.instagram.com/javex_08?obrf=Zm5xOXE4dzhrMDA0" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn" href="https://m.me/Javex02" target="_blank" rel="noopener">Messenger</a>
+      <a class="btn" href="https://wa.me/639207724994?s=t" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn" href="https://t.me/javeue" target="_blank" rel="noopener">Telegram</a>
+    </div>
 
-      <footer>
-        <p>Thanks for visiting my profile.</p>
-        <span class="bolt" aria-hidden="true">ϟ</span>
-      </footer>
+    <section class="section">
+      <h2>Scan My Digital Business Card</h2>
+      <img class="qr" src="qrcode.png" alt="QR code linking to James T. Gabas digital business card">
+      <p class="small">Scan the QR code to open this digital business card.</p>
     </section>
-    <p class="page-note">Tap any contact item to connect.</p>
+    <footer>Thank you for connecting!</footer>
   </main>
-  <script src="script.js"></script>
 </body>
 </html>
