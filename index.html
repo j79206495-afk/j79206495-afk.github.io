@@ -1,89 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0b1220">
-<title>Engr. James Tiongson Gabas | Electrical Engineer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#0b1220;--panel:#121b2e;--line:#243250;--text:#f2f5fa;--muted:#9aa8c2;--amber:#ffb81c}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--text);font-family:Barlow,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
-.card{max-width:480px;margin:0 auto;min-height:100vh;background:var(--bg)}
-
-/* Hero: profile photo is framed, glowing and spotlit */
-.hero{position:relative;padding:34px 22px 18px;text-align:center;background:radial-gradient(ellipse at 50% 38%,rgba(255,184,28,.28) 0%,rgba(255,184,28,.08) 45%,rgba(11,18,32,0) 72%)}
-.frame{width:min(78%,340px);aspect-ratio:4/5;margin:0 auto;border-radius:26px;padding:4px;background:linear-gradient(160deg,#ffd66b,var(--amber) 45%,#c98600);box-shadow:0 0 0 8px rgba(255,184,28,.14),0 0 70px rgba(255,184,28,.5),0 24px 50px rgba(0,0,0,.55);animation:glow 3.2s ease-in-out infinite}
-.frame img{width:100%;height:100%;object-fit:cover;object-position:50% 45%;border-radius:22px;display:block}
-@keyframes glow{50%{box-shadow:0 0 0 12px rgba(255,184,28,.2),0 0 95px rgba(255,184,28,.65),0 24px 50px rgba(0,0,0,.55)}}
-.id{margin-top:26px}
-.id h1{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;font-weight:700;font-size:clamp(2.2rem,10.5vw,3rem);line-height:1;letter-spacing:.2px}
-.id p{margin-top:10px;color:var(--amber);font-weight:600;font-size:1.05rem}
-
-/* One moment of motion: a current line drawn under the photo */
-.wire{display:block;width:100%;height:14px}
-.wire path{fill:none;stroke:var(--amber);stroke-width:2;stroke-dasharray:520;stroke-dashoffset:520;animation:draw 1.4s .3s ease-out forwards}
-.wire circle{fill:var(--amber);opacity:0;animation:pop .2s 1.6s forwards}
-@keyframes draw{to{stroke-dashoffset:0}}
-@keyframes pop{to{opacity:1}}
-
-.body{padding:6px 22px 40px}
-.save{display:block;text-align:center;background:var(--amber);color:#1a1300;font-weight:600;font-size:1.05rem;text-decoration:none;padding:16px;border-radius:10px;margin:14px 0 26px}
-.group{margin-bottom:24px}
-.group h2{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:1.15rem;color:var(--muted);margin-bottom:6px}
-.row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 2px;border-top:1px solid var(--line);color:var(--text);text-decoration:none}
-.row:last-child{border-bottom:1px solid var(--line)}
-.row b{font-weight:600}
-.row span{color:var(--muted);font-size:.95rem;text-align:right;overflow-wrap:anywhere}
-.row:active{background:var(--panel)}
-a:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
-.thanks{text-align:center;color:var(--muted);font-size:.92rem;margin-top:8px}
-@media (min-width:520px){.card{border-left:1px solid var(--line);border-right:1px solid var(--line)}}
-@media (prefers-reduced-motion:reduce){.frame{animation:none}.wire path{animation:none;stroke-dashoffset:0}.wire circle{animation:none;opacity:1}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6efe6">
+  <title>Digital Business Card | Maybelle Pacaldo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main class="card">
-  <header class="hero">
-    <div class="frame"><img src="profile.jpg" alt="Engr. James Tiongson Gabas"></div>
-    <div class="id">
-      <h1>Engr. James Tiongson Gabas</h1>
-      <p>Electrical Engineer</p>
-    </div>
-  </header>
+  <div class="wrap">
+    <header class="hero">
+      <img src="profile.jpg" alt="Profile photo of Maybelle Pacaldo">
+      <div class="name">
+        <h1>Arki. Maybelle Serna Pacaldo</h1>
+        <p class="role">Architect</p>
+        <p class="handle">@bellendaaaaa</p>
+      </div>
+    </header>
 
-  <svg class="wire" viewBox="0 0 480 14" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0 7 H300 L312 2 H345 L357 7 H470"/>
-    <circle cx="474" cy="7" r="4"/>
-  </svg>
+    <main>
+      <button class="save" id="save" type="button">Save Contact</button>
 
-  <div class="body">
-    <a class="save" href="james-gabas.vcf" download>Save contact</a>
-
-    <section class="group">
       <h2>Contact</h2>
-      <a class="row" href="tel:+639207724994"><b>Phone</b><span>+63 920 772 4994</span></a>
-      <a class="row" href="mailto:jamesgabas85@gmail.com"><b>Email</b><span>jamesgabas85@gmail.com</span></a>
-    </section>
+      <a class="row" href="tel:+639951807215"><b>Phone</b><span>+63 995 180 7215</span></a>
+      <a class="row" href="mailto:Maypacaldo13@gamail.com"><b>Email</b><span>Maypacaldo13@gamail.com</span></a>
 
-    <section class="group">
-      <h2>Message me</h2>
-      <a class="row" href="https://m.me/Javex02" target="_blank" rel="noopener"><b>Messenger</b><span>Javex02</span></a>
-      <a class="row" href="https://wa.me/639207724994?s=t" target="_blank" rel="noopener"><b>WhatsApp</b><span>+63 920 772 4994</span></a>
-      <a class="row" href="https://t.me/javeue" target="_blank" rel="noopener"><b>Telegram</b><span>@javeue</span></a>
-    </section>
+      <h2>Message Me</h2>
+      <a class="row" href="https://m.me/61596324033082" target="_blank" rel="noopener noreferrer"><b>Messenger</b><span>Send a message ↗</span></a>
+      <a class="row" href="https://wa.me/qr/MXVC3Q3X3XOMI1" target="_blank" rel="noopener noreferrer"><b>WhatsApp</b><span>Chat with me ↗</span></a>
 
-    <section class="group">
-      <h2>Follow me</h2>
-      <a class="row" href="https://www.facebook.com/share/1MJzKPGMtL/" target="_blank" rel="noopener"><b>Facebook</b><span>James Gabas</span></a>
-      <a class="row" href="https://www.instagram.com/javex_08?obrf=Zm5xOXE4dzhrMDA0" target="_blank" rel="noopener"><b>Instagram</b><span>@javex_08</span></a>
-    </section>
+      <h2>Follow Me</h2>
+      <a class="row" href="https://www.facebook.com/share/1Va4cUzUYh/" target="_blank" rel="noopener noreferrer"><b>Facebook</b><span>Maybelle Pacaldo ↗</span></a>
+      <a class="row" href="https://www.instagram.com/bellendaaaaa" target="_blank" rel="noopener noreferrer"><b>Instagram</b><span>@bellendaaaaa ↗</span></a>
+      <a class="row" href="https://www.tiktok.com/@.bellendaaaaa" target="_blank" rel="noopener noreferrer"><b>TikTok</b><span>@.bellendaaaaa ↗</span></a>
 
-    <p class="thanks">Thank you for connecting!</p>
+      <p class="thanks">Thank you for connecting!</p>
+    </main>
   </div>
-</main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
 </body>
 </html>
